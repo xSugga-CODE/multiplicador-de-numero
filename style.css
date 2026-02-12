@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+	--bg:#0f1720;
+	--card:#0b1220;
+	--muted:#9aa6b2;
+	--accent:#7c3aed;
+	--accent-2:#06b6d4;
+	--danger:#ef4444;
+	--glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg),#06070a);font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial}
+.card{width:min(720px,92%);background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:28px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+.card h1{margin:0 0 6px;color:#fff;font-size:28px}
+.lead{margin:0 0 18px;color:var(--muted)}
+.controls{display:flex;gap:10px;align-items:center;margin-bottom:18px}
+.controls input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:#fff}
+.btn{padding:10px 14px;border-radius:10px;border:0;background:transparent;color:#dbe7ef;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 6px 18px rgba(124,58,237,0.18)}
+.btn.danger{background:linear-gradient(90deg,var(--danger),#ff7a7a);color:#fff}
+.output{display:flex;flex-direction:column;gap:8px;padding:18px;border-radius:10px;background:linear-gradient(90deg,rgba(255,255,255,0.01),rgba(255,255,255,0.015));border:1px solid rgba(255,255,255,0.02)}
+.output .label{color:var(--muted);font-size:13px}
+#value{font-size:28px;color:#fff;font-weight:700}
+.hint{margin-top:14px;color:var(--muted);font-size:13px}
+
+@media (max-width:520px){.controls{flex-direction:column;align-items:stretch}.btn{width:100%}}

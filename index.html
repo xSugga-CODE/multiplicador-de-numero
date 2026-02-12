@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Duplicador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Duplicador</h1>
+        <p class="lead">Ingresa un número y observa cómo se duplica cada 2 segundos.</p>
+
+        <div class="controls">
+            <input id="numInput" type="number" placeholder="Ingresa un número" />
+            <button id="startBtn" class="btn primary">Iniciar</button>
+            <button id="pauseBtn" class="btn">Pausa</button>
+            <button id="stopBtn" class="btn danger">Detener</button>
+        </div>
+
+        <div class="output">
+            <div class="label">Valor actual</div>
+            <div id="value">—</div>
+        </div>
+
+        <footer class="hint">Controles: Iniciar, Pausa, Detener. Tema oscuro y elegante.</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
